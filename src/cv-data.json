@@ -1,0 +1,172 @@
+{
+  "personal": {
+    "name": "Adeesh Perera",
+    "email": "adeesh.perera@outlook.com",
+    "phone": "(+94) 740301774",
+    "location": "Colombo, Sri Lanka",
+    "linkedin": "Adeesh Perera",
+    "github": "Adeesh Perera"
+  },
+  "experience": [
+    {
+      "title": "Freelance Software Developer",
+      "period": "Current",
+      "company": "Self-employed"
+    }
+  ],
+  "education": [
+    {
+      "qualification": "BSc (Hons) Computer Science",
+      "institution": "University of Plymouth",
+      "duration": "Mar 2022 – Dec 2025"
+    },
+    {
+      "qualification": "AWS Cloud Practitioner Essentials",
+      "type": "Certification"
+    },
+    {
+      "qualification": "Provider: AWS Training & Certification",
+      "type": "Certification"
+    },
+    {
+      "qualification": "Linux Fundamentals with System Administration Essentials",
+      "type": "Certification"
+    }
+  ],
+  "skills": [
+    "Java",
+    "Spring Boot",
+    "Spring JPA",
+    "Spring Security",
+    "Spring MVC",
+    "Apache Maven",
+    "TypeScript",
+    "Next.js",
+    "Node.js",
+    "Express",
+    "React",
+    "SQL",
+    "Python",
+    "PHP",
+    "Flutter",
+    "Go/Golang",
+    "Rust",
+    "C#",
+    "AWS",
+    "Digital Ocean",
+    "Docker",
+    "CI/CD - Github Actions",
+    "Linux",
+    "Git",
+    "Data Warehouses and Data Processing",
+    "Data Pipelines",
+    "Snowflake",
+    "GCP",
+    "MS Azure",
+    "Relational Databases",
+    "Non-Relational Databases",
+    "PostgreSQL",
+    "MongoDB",
+    "Agile development",
+    "Data structures and Algorithms",
+    "Object Oriented Programming (OOP)",
+    "Test-Driven Development",
+    "System Design",
+    "Code Review",
+    "Problem-Solving",
+    "Team Collaboration",
+    "Adaptability and Continuous Learning",
+    "Technical Leadership",
+    "Communication",
+    "Analytical",
+    "Troubleshooting"
+  ],
+  "projects": [
+    {
+      "name": "Course",
+      "description": "",
+      "links": []
+    },
+    {
+      "name": "instantly",
+      "description": "",
+      "links": []
+    },
+    {
+      "name": "studio",
+      "description": "",
+      "links": []
+    },
+    {
+      "name": "springboot-core-rest-api",
+      "description": "",
+      "links": []
+    },
+    {
+      "name": "fundamental",
+      "description": "",
+      "links": []
+    },
+    {
+      "name": "github",
+      "description": "",
+      "links": []
+    },
+    {
+      "name": "spring-boot-task-management-api",
+      "description": "",
+      "links": []
+    },
+    {
+      "name": "featuring",
+      "description": "",
+      "links": []
+    },
+    {
+      "name": "real-estate-analytics-platform",
+      "description": "",
+      "links": []
+    },
+    {
+      "name": "spring-security-blog-platform",
+      "description": "",
+      "links": []
+    },
+    {
+      "name": "Spring",
+      "description": "",
+      "links": []
+    }
+  ],
+  "languages": [
+    "English"
+  ],
+  "memberships": [
+    {
+      "organization": "IEEE Student Branch",
+      "duration": "Oct 2022 – Current"
+    },
+    {
+      "organization": "FOSS Community",
+      "duration": "Jun 2022 – Current"
+    }
+  ],
+  "recommendations": [
+    {
+      "name": "Dinuka Sankalpa Caldera",
+      "position": "Senior Software Engineer",
+      "company": "WSO2"
+    },
+    {
+      "name": "Dilanka Perera",
+      "position": "Senior Software Engineer",
+      "company": "LSEG (London Stock Exchange Group)"
+    },
+    {
+      "name": "dilankaperera27@gmail.com",
+      "position": "",
+      "company": ""
+    }
+  ],
+  "rawText": "\n\nContact Information\n• Name: Adeesh Perera\n• Phone: (+94) 740301774\n• Email: \nadeesh.perera@outlook.com\n• Location: Colombo, Sri Lanka\n• LinkedIn: Adeesh Perera\n• GitHub: Adeesh Perera\n• Medium: Adeesh Perera\nWork Experience\nFreelance Software Developer - Current\nEducation and Training\nBSc (Hons) Computer Science\n• Institution: University of Plymouth\n• Duration: Mar 2022 – Dec 2025\n• Country: United Kingdom\n• Website: \nhttps://www.plymouth.ac.uk/\nAWS Cloud Practitioner Essentials\n• Provider: AWS Training & Certification\n• Date: May 2025\n• Website: \nhttps://skillbuilder.aws/\nLinux Fundamentals with System Administration Essentials\n• Provider: KodeKloud\n• Date: Aug 2025\n• Website: \nhttps://learn.kodekloud.com/user/courses/lab-linux-tutorial\nSkills\nJava, Spring Boot, Spring JPA, Spring Security, Spring MVC, Apache Maven, TypeScript, Next.js, Node.js,\nExpress, React, SQL, Python, PHP, Flutter, Go/Golang, Rust, C#, AWS, Digital Ocean, Docker, CI/CD -\nGithub Actions, Linux, Git, Data Warehouses and Data Processing, Data Pipelines, Snowflake, GCP, MS\nAzure, Relational Databases, Non-Relational Databases, PostgreSQL, MongoDB, Agile development,\nData structures and Algorithms, Object Oriented Programming (OOP), Test-Driven Development, System\nDesign, Code Review, Problem-Solving, Team Collaboration, Adaptability and Continuous Learning,\nTechnical Leadership, Communication, Analytical, Troubleshooting\nProjects\nCourseGenix AI Learning Studio\n\n• Status: Current\n• Description: AI-driven course creator with Next.js. Generate educational content, videos, and quizzes\ninstantly.\n• Links: • \nhttps://www.coursegenix.me/ • https://github.com/adeeshperera/coursegenix-ai-learning-\nstudio\nspringboot-core-rest-api\n• Description: A core Spring Boot REST API implementation with clean architecture, demonstrating\nfundamental web service patterns and best practices for enterprise development.\n• Links: • \nhttps://container-service-1.rgaj2b5egkhqr.ap-southeast-1.cs.amazonlightsail.com/ • https://\ngithub.com/adeeshperera/springboot-core-rest-api\nspring-boot-task-management-api\n• Description: Scalable task management platform with Spring Boot backend and React frontend,\nfeaturing enterprise-grade architecture, database integration, and RESTful API design patterns.\n• Link: \nhttps://github.com/adeeshperera/spring-boot-task-management-api\nreal-estate-analytics-platform\n• Description: Real estate data analytics platform with ML price prediction, Snowflake data warehouse,\nand automated market intelligence pipeline.\n• Link: \nhttps://github.com/adeeshperera/real-estate-analytics-platform\nspring-security-blog-platform\n• Description: Spring Boot blog platform with JWT authentication and React frontend. Demonstrates\nSpring Security best practices with role-based access control and secure REST APIs.\n• Link: \nhttps://github.com/adeeshperera/spring-security-blog-platform\nLanguage Skills\nEnglish\nNetworks and Memberships\nIEEE Student Branch\n• Duration: Oct 2022 – Current\n• Affiliations: IEEE, IEEE SSCS, IEEE VTS, IEEE EDS, IEEE WIE\nFOSS Community\n• Duration: Jun 2022 – Current\n• Organizations: DevLab, Devoke\nRecommendations\nDinuka Sankalpa Caldera\n\n• Position: Senior Software Engineer\n• Company: WSO2\n• Email: dinuka.caldera@gmail.com\n• Phone: (+94) 777609656\n• LinkedIn: \nhttps://www.linkedin.com/in/dinuka-sankalpa-caldera/\nDilanka Perera\n• Position: Senior Software Engineer\n• Company: LSEG (London Stock Exchange Group)\n• Email: \ndilankaperera27@gmail.com\n• Phone: (+94) 713807333\n• LinkedIn: \nhttps://www.linkedin.com/in/dilanka-perera/"
+}
