@@ -1,0 +1,32 @@
+{
+	"name": "mcp-cv-server",
+	"version": "1.0.0",
+	"description": "MCP server for CV chat and email notifications",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": "node --watch src/index.js",
+		"test": "jest",
+		"test:watch": "jest --watch"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^0.5.0",
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.5",
+		"express": "^4.18.2",
+		"nodemailer": "^6.9.13",
+		"pdf-parse": "^1.1.1"
+	},
+	"devDependencies": {
+		"jest": "^29.7.0",
+		"nodemon": "^3.1.0"
+	},
+	"keywords": [
+		"mcp",
+		"cv",
+		"email",
+		"server"
+	],
+	"author": "",
+	"license": "MIT"
+}
