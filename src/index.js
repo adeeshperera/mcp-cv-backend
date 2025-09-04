@@ -12,17 +12,10 @@ const {
 	ListToolsRequestSchema,
 } = require("@modelcontextprotocol/sdk/types.js");
 const path = require("path");
-const express = require("express");
-const cors = require("cors");
 
 const CVParser = require("./cv-parser.js");
 const EmailService = require("./email-service.js");
 const MCPTools = require("./mcp-tools.js");
-
-// Initialize Express app for serverless deployment
-const app = express();
-app.use(cors());
-app.use(express.json());
 
 class MCPCVServer {
 	constructor() {
@@ -216,91 +209,15 @@ class MCPCVServer {
 			toolsReady: !!this.mcpTools,
 		};
 	}
-
-	// Method to execute a tool directly (for API endpoints)
-	async executeTool(toolName, args) {
-		if (!this.isInitialized || !this.mcpTools) {
-			return {
-				success: false,
-				error: "Server not properly initialized",
-				timestamp: new Date().toISOString(),
-			};
-		}
-
-		try {
-			const result = await this.mcpTools.executeTool(toolName, args);
-			return result;
-		} catch (error) {
-			return {
-				success: false,
-				error: error.message,
-				tool: toolName,
-				timestamp: new Date().toISOString(),
-			};
-		}
-	}
 }
 
-// Initialize the server
-const mcpServer = new MCPCVServer();
-
-// Setup API endpoints for serverless environment
-app.get("/api/health", (req, res) => {
-	res.json({
-		status: "ok",
-		message: "MCP CV Server API is running",
-		timestamp: new Date().toISOString(),
-	});
-});
-
-app.get("/api/tools", async (req, res) => {
-	await mcpServer.initialize();
-
-	if (!mcpServer.mcpTools) {
-		return res.status(500).json({
-			success: false,
-			error: "Tools not available",
-		});
-	}
-
-	const tools = mcpServer.mcpTools.getToolDefinitions();
-
-	res.json({
-		success: true,
-		tools: tools.map((t) => t.name),
-		descriptions: tools.reduce((acc, t) => {
-			acc[t.name] = t.description;
-			return acc;
-		}, {}),
-	});
-});
-
-app.post("/api/tools/call", async (req, res) => {
-	const { tool, arguments: args } = req.body;
-
-	if (!tool) {
-		return res.status(400).json({
-			success: false,
-			error: "Tool name is required",
-		});
-	}
-
-	await mcpServer.initialize();
-	const result = await mcpServer.executeTool(tool, args || {});
-	res.json(result);
-});
-
-// Start the server if running directly
+// Start the server if this file is run directly
 if (require.main === module) {
-	const PORT = process.env.PORT || 3001;
-
-	mcpServer.initialize().then(() => {
-		app.listen(PORT, () => {
-			console.log(`MCP CV Server API running on port ${PORT}`);
-		});
+	const server = new MCPCVServer();
+	server.start().catch((error) => {
+		console.error("Fatal error starting server:", error);
+		process.exit(1);
 	});
 }
 
-// For serverless functions
-module.exports = app;
-module.exports.MCPCVServer = MCPCVServer;
+module.exports = MCPCVServer;
