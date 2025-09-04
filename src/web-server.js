@@ -136,13 +136,36 @@ class WebServer {
 			try {
 				console.log(`Executing tool: ${tool} with args:`, args);
 				const result = await this.mcpTools.executeTool(tool, args || {});
-				console.log("Tool execution successful:", result);
+				console.log("Tool execution result:", result);
 
-				res.json({
-					success: true,
-					result: result,
-					timestamp: new Date().toISOString(),
-				});
+				// Check if the tool execution was successful and extract data
+				if (result && result.success && result.data !== undefined) {
+					// Return the actual data with metadata
+					res.json({
+						success: true,
+						data: result.data,
+						summary: result.summary || `${tool} executed successfully`,
+						tool: tool,
+						timestamp: new Date().toISOString(),
+					});
+				} else if (result && result.error) {
+					// Handle tool-level errors
+					console.log("Tool returned error:", result.error);
+					res.status(400).json({
+						error: result.error,
+						tool: tool,
+						timestamp: new Date().toISOString(),
+					});
+				} else {
+					// Handle unexpected result format - return as-is but log it
+					console.log("Unexpected result format, returning raw result:", result);
+					res.json({
+						success: true,
+						data: result,
+						tool: tool,
+						timestamp: new Date().toISOString(),
+					});
+				}
 			} catch (error) {
 				console.error("MCP tool execution failed:", error.message);
 				console.error("Stack trace:", error.stack);
