@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/adeeshperera-mcp-cv-backend-badge.png)](https://mseep.ai/app/adeeshperera-mcp-cv-backend)
+
 # MCP CV Backend
 
 A Model Context Protocol (MCP) server for CV data and email functionality, now available as both an MCP server and a REST API.
